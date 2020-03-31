@@ -1,0 +1,2 @@
+<h4 style="margin-top: 0; padding-top: 20px;">Ini adalah halaman Gudang</h4>
+<!-- Di page ini akan dimuat data / info gudang (keseluruhan data dari inventaris yang ada di smkn 1 denpasar) exp: Jumlah semua inventaris yg ada dll.-->

@@ -1,0 +1,58 @@
+<?php 
+	include_once("../conf/koneksi.php");
+
+	$query="SELECT * FROM tb_petugas";
+
+	$hasil = mysqli_query($conn, $query);
+	if (isset($_POST['cari'])){
+		$cari = $_POST['keywoard'];
+		$hasil = mysqli_query($conn, "SELECT * FROM tb_petugas WHERE nama_petugas like '%$cari%'");
+	}
+ ?>
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Aplikasi Inventaris SMKN 1 Denpasar</title>
+ 	<link rel="stylesheet" type="text/css" href="../../css/file.css">
+ </head>
+ <body>
+ 	<div class="petugas">
+ 	<h1>Petugas Inventaris SMKN 1 Denpasar</h1>
+ 	<form method="POST">
+ 		<input type="text" name="keywoard" placeholder="Cari -- Nama Petugas --" autofocus="">
+ 		<button name="cari" type="submit">Cari</button>
+ 		<button>Tambah</button>
+ 		<button>Print</button>
+ 		<button>Excel</button>
+ 	</form>
+ 	<table border="1" align="center">
+ 		<tr>
+ 			<th>NO</th>
+ 			<th>Id Petugas</th>
+ 			<th>Nama Petugas</th>
+ 			<th>NIP</th>
+ 			<th>Jurusan</th>
+ 			<th>Aksi</th>
+ 		</tr>
+
+ 		<?php 
+ 			$nomor = 1;
+ 			while($data = mysqli_fetch_array($hasil)){
+ 				?>
+ 					<tr>
+ 						<td><?php echo $nomor; ?></td>
+ 						<td><?php echo $data['id_petugas']; ?></td>
+ 						<td><?php echo $data['nama_petugas']; ?></td>
+ 						<td><?php echo $data['nip']; ?></td>
+ 						<td><?php echo $data['jurusan']; ?></td>
+ 						<td>
+ 							<a href="edit_petugas.php?id= <?php echo $data['id_petugas']; ?>">Edit</a>
+ 							<a href="hapus_petugas.php?id= <?php echo $data['id_petugas'] ?>" onclick = "return confirm(Apakah Anda yakin ingin menghapus <?php echo $data['nama_petugas']; ?>)">Hapus</a>
+ 						</td>
+ 					</tr>
+ 			<?php $nomor++; } ?>
+ 	</table>
+ 	</div>
+ </body>
+ </html>

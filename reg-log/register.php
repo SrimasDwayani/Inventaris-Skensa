@@ -7,8 +7,8 @@
 		  font-family: Arial, Helvetica, -serif;
 		  background-image: url(../img/gam.jpg);
 		  height: 400px;
-		  width: 360px;
-		  margin-left: 490px;
+		  width: 320px;
+		  margin-left: 530px;
 		  margin-top: 100px;
 		}
 
@@ -22,7 +22,7 @@
 		  background-color:white;
 		  border:0px solid black;
 		  box-shadow: 0 0 10px 5px black;
-		  opacity: 0.8;
+		  opacity: 0.9;
     	  filter: alpha(opacity=40);
 		}
 
@@ -109,23 +109,23 @@
 
 	    <div class="box-login">
 			<i class="fas fa-user"></i>
-			<input type="text" name="nama" placeholder="Name">
+			<input type="text" name="nama" placeholder="Name" required="">
 		</div>
 
 
 		<div class="box-login">
 			<i class="fas fa-envelope"></i>
-			<input type="number" name="nis" placeholder="NIS">
+			<input type="number" name="nis" placeholder="NIS" required="">
 		</div>
 
 
 		<div class="box-login">
 			<i class="fas fa-lock"></i>
-			<input type="text" name="password" placeholder="Password">
+			<input type="text" name="password" placeholder="Password" required="">
 		</div>
 		<hr>
 
-	    <a href="sweetalert.php"><button class="daftar" type="submit" name="register">DAFTAR</button></a>
+	    <button class="daftar" type="submit" name="register">DAFTAR</button>
 
 	    <p>Already have an account? <a href="../index.php">Sign in</a>.</p>
 	  </div>
