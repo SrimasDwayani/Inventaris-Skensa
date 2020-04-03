@@ -1,0 +1,176 @@
+body{
+	color: black;
+	font-family: Arial, Helvetica, -serif;
+	font-size: 18px;
+	background-color: #203354; 
+	box-shadow: 0 0 8px 3px black;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*------------------------- header -----------------------*/
+#header{
+	height: 110px;
+	background: #203354;
+	color: white;
+}
+.header .logo{
+	float: left;
+}
+.header .logo h4{
+	margin-top: 0;
+	opacity: 0.8;
+}
+.logo img{
+	height: 80px;
+	width: 80px;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+.header .header_title{
+	padding-top: 1px;
+}
+.header .header_title h2{
+	opacity: 1;
+	margin-top: 15px;
+}
+.header .header_title h2, h4{
+	margin-bottom: 0;
+}
+.header .header_title h4,h6{
+	opacity: 0.8;
+	margin-top: 4px;
+}
+.header .header_title h2,h4,h6{
+	text-align: center;
+}
+
+/*-------------------------- home ------------------------*/
+#content{
+	background: #fff;
+	min-height: 448px;
+	color: black;
+}
+#footer {
+	background:#368a88;
+	height: 50px;
+}
+#footer p{
+	color: white;
+	margin: 0;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 18px;
+}
+#tambah #taskbar{
+	float: left;
+}
+#tambah #content{
+	margin-left: 190px;
+}
+
+/*----------------------Bagian Menu---------------------*/ 
+.menu {
+	height: 37px;
+	background-color: #368a88;
+	padding-bottom: 0px;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.menu ul li{
+	float: left;
+	list-style: none;
+}
+.menu ul li a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-size: 18px;
+	background: #368a88;
+	color: white;
+}
+.menu ul li a:hover{
+	background: #364a88;
+	color: white;
+}
+.break_menu{
+	height: 12px;
+	background-color: white;
+	opacity: 0.2;
+}
+.box{
+	margin-left: 30px;
+	padding-top: 20px;
+}
+.box .jurusan{
+	height: 150px;
+	width: 170px;
+	margin: 8px;
+	float: left;
+}
+.box .jurusan img{
+	height: 110px;
+	width: 170px;
+	border: 3px solid gray;
+}
+.petugas{
+	text-align: center;
+	padding-top: 1px;
+}
+.petugas form a{
+	display: inline;
+	background-color: #368a88;
+	color: white;
+	padding: 6px;
+	text-decoration: none;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.petugas table{
+	border-collapse: collapse;
+}
+table th, td{
+	padding: 6px;
+}
+
+/*------------------------ taskbar ----------------------*/
+.taskbar{
+	background-color: #f1f1f1;
+	width: 190px;
+	height: 448px;
+	padding: 10px 0px;
+}
+.taskbar .profil img{
+	width: 80px;
+	height: 80px;
+	margin-left: 55px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.taskbar ul {
+	padding: 0;
+	margin:0;
+	opacity: 0.5;
+}
+.taskbar ul a{
+	text-decoration: none;
+	text-align: center;
+}
+.taskbar ul a li{
+	list-style: none;
+	width: 150px;
+	margin: 5px 20px;
+	padding: 5px 20px;
+	background-color: white;
+	color: black;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	opacity: 0.9;
+}

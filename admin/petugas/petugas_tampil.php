@@ -14,17 +14,18 @@
  <html>
  <head>
  	<title>Aplikasi Inventaris SMKN 1 Denpasar</title>
- 	<link rel="stylesheet" type="text/css" href="../../css/file.css">
+ 	<link rel="stylesheet" type="text/css" href="../../css/ini.css">
  </head>
  <body>
  	<div class="petugas">
- 	<h1>Petugas Inventaris SMKN 1 Denpasar</h1>
- 	<form method="POST">
+ 	<h2>Petugas Inventaris SMKN 1 Denpasar</h2>
+ 	<form method="POST" action="">
  		<input type="text" name="keywoard" placeholder="Cari -- Nama Petugas --" autofocus="">
  		<button name="cari" type="submit">Cari</button>
- 		<button>Tambah</button>
- 		<button>Print</button>
- 		<button>Excel</button>
+ 		<a href="tambah_petugas.php">Tambah</a>
+ 		<a href="petugas_print.php" target="_blank">Print</a>
+ 		<a href="petugas_excel.php">Excel</a>
+ 		<a href="petugas_reset.php">Reset</a>
  	</form>
  	<table border="1" align="center">
  		<tr>
@@ -47,7 +48,7 @@
  						<td><?php echo $data['nip']; ?></td>
  						<td><?php echo $data['jurusan']; ?></td>
  						<td>
- 							<a href="edit_petugas.php?id= <?php echo $data['id_petugas']; ?>">Edit</a>
+ 							<a href="edit_petugas.php?id= <?php echo $data['id_petugas']; ?>">Edit</a>  |
  							<a href="hapus_petugas.php?id= <?php echo $data['id_petugas'] ?>" onclick = "return confirm(Apakah Anda yakin ingin menghapus <?php echo $data['nama_petugas']; ?>)">Hapus</a>
  						</td>
  					</tr>

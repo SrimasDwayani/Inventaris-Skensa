@@ -6,7 +6,7 @@
 <body>
 	<div class="taskbar">
 		<div class="profil">
-			<img src="../img/profil.jpg">
+			<img src="../img/user.png">
 		</div>
 		<ul>
 			<a href="?tampil=user_edit"><li>Profil</li></a>

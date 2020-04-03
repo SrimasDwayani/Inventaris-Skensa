@@ -1,11 +1,10 @@
 <?php
 	if (isset($_GET['tampil'])) $tampil = $_GET['tampil'];
-	else $tampil = "beranda";
+	else $tampil = "menu";
 
-	if ($tampil == "beranda")		include ("beranda.php");
-
-	elseif ($tampil == "menu")
+	if ($tampil == "menu")
 		include ("menu/menu_tampil.php");
+	
 	elseif ($tampil == "menu_tambah") 
 		include ("menu/menu_tambah.php");
 	elseif ($tampil == "menu_tambahproses")
