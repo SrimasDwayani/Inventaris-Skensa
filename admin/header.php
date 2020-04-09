@@ -1,6 +1,6 @@
 <div class="header">
 	<div class="logo">
-		<img src="../img/logoskensa.png">
+		<img src="../img/1.png">
 		<h4><marquee> SMKN 1 Denpasar</marquee></h4>
 	</div>
 	<div class="header_title">
