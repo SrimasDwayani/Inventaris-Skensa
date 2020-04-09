@@ -2,15 +2,20 @@
 <html>
 <head>
 	<title>Tambah Petugas</title>
-	<link rel="stylesheet" type="text/css" href="../../css/ini.css">
+	<link rel="stylesheet" type="text/css" href="../../css/file.css">
 </head>
-<body>
+<body style="box-shadow: none;">
+	<div class="tmbh_pet">
 	<h2>Tambah Petugas Inventaris</h2>
 	<form method="post" action="petugas_tambahproses.php">
 		<table>
 			<tr>
 				<td>Nama Petugas</td>
 				<td><input type="text" name="nama_petugas" placeholder="Ketik nama petugas"></td>
+			</tr>
+			<tr>
+				<td>Foto</td>
+				<td><input type="file" name="Foto" required=""></td>
 			</tr>
 			<tr>
 				<td>NIP</td>
@@ -35,9 +40,11 @@
 			<br>
 			<tr>
 				<td></td>
-				<td><input type="submit" value="Tambah Petugas"></td>
+				<td class="sub"><input type="submit" value="Tambah Petugas"></td>
 			</tr>
 		</table>
 	</form>
+	</div>
+	<br>
 </body>
 </html>

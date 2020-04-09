@@ -24,7 +24,7 @@
 			<a href="?tampil=barang_keluar"><li>Barang Keluar</li></a>
 		</ul>
 		<ul>
-			<a href="../index.php"><li>Logout</li></a>
+			<a href="?tampil=logout"><li>Logout</li></a>
 		</ul>
 	</div>
 </body>
