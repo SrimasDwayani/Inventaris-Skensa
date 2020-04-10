@@ -5,17 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="../../css/file.css">
 </head>
 <body style="box-shadow: none;">
-	<div class="tmbh_pet">
+	<div class="crud_pet">
 	<h2>Tambah Petugas Inventaris</h2>
 	<form method="post" action="petugas_tambahproses.php">
 		<table>
 			<tr>
 				<td>Nama Petugas</td>
 				<td><input type="text" name="nama_petugas" placeholder="Ketik nama petugas"></td>
-			</tr>
-			<tr>
-				<td>Foto</td>
-				<td><input type="file" name="Foto" required=""></td>
 			</tr>
 			<tr>
 				<td>NIP</td>

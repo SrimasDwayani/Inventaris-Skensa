@@ -2,7 +2,7 @@ body{
 	color: black;
 	font-family: Arial, Helvetica, -serif;
 	font-size: 18px;
-	background-color: #203354; 
+	background-color: #f1f1f1; 
 	box-shadow: 0 0 8px 3px black;
 	margin: 0;
 }
@@ -51,7 +51,7 @@ body{
 /*-------------------------- home ------------------------*/
 #content{
 	background: #fff;
-	min-height: 448px;
+	min-height: 460px;
 	color: black;
 }
 #footer {
@@ -99,11 +99,6 @@ body{
 	background: #364a88;
 	color: white;
 }
-.break_menu{
-	height: 12px;
-	background-color: white;
-	opacity: 0.2;
-}
 .box{
 	margin-left: 30px;
 	padding-top: 20px;
@@ -138,12 +133,18 @@ body{
 table th, td{
 	padding: 6px;
 }
+.petugas .aksi{
+	background-color: #368a88;
+	color: white;
+	padding: 2px 8px;
+	text-decoration: none;
+}
 
 /*------------------------ taskbar ----------------------*/
 .taskbar{
 	background-color: #f1f1f1;
 	width: 190px;
-	height: 448px;
+	height: 460px;
 	padding: 10px 0px;
 }
 .taskbar .profil img{
@@ -178,17 +179,17 @@ table th, td{
 /*------------------------ CRUD -------------------------*/
 
 /*----- tambah -----*/
-.tmbh_pet{
+.crud_pet{
 	background-color: white;
 	width: 500px;
-	height: 300px;
+	height: 330px;
 	padding-left: 60px;
 	padding-top: 20px;
-	margin-top: 170px;
+	margin-top: 160px;
 	margin-left: 430px;
 	box-shadow: 0 0 8px 3px black;
 }
-.tmbh_pet .sub input{
+.crud_pet .sub input{
 	background-color: #368a88;
 	color: white;
 	padding: 6px;

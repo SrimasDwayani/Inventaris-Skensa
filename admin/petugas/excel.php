@@ -17,16 +17,11 @@
  	<link rel="stylesheet" type="text/css" href="../../css/file.css">
  </head>
  <body>
- 	<div class="petugas">
  	<h2>Petugas Inventaris SMKN 1 Denpasar</h2>
- 	<form method="POST" action="">
- 		<input type="text" name="keywoard" placeholder="Cari -- Nama Petugas --" autofocus="">
- 		<button name="cari" type="submit">Cari</button>
- 		<a href="petugas/tambah_petugas.php">Tambah</a>
- 		<a href="petugas/cetak.php" target="_blank">Cetak</a>
- 		<a href="petugas/excel.php" target="_blank">Excel</a>
- 		<a href="petugas/reset.php">Reset</a>
- 	</form>
+ 	<?php 
+		header("Content-type: application/vnd-ms-excel");
+		header("Content-Disposition: attachment; filename=datajadwal.xls");
+	?>
  	<table border="1" align="center">
  		<tr>
  			<th>NO</th>
@@ -47,18 +42,8 @@
  						<td><?php echo $data['nama_petugas']; ?></td>
  						<td><?php echo $data['nip']; ?></td>
  						<td><?php echo $data['jurusan']; ?></td>
- 						<td>
- 							<a class="aksi" href="petugas/petugas_edit.php?id= <?php echo $data['id_petugas']; ?>">Edit</a>  |
- 							<a class="aksi" href="petugas/petugas_hapus.php?id= <?php echo $data['id_petugas'] ?>" onclick = "return confirm(Apakah Anda yakin ingin menghapus <?php echo $data['nama_petugas']; ?>)">Hapus</a>
- 						</td>
  					</tr>
  			<?php $nomor++; } ?>
  	</table>
- 	</div>
- 	<br>
- 	<script>
-		window.print();
-		setTimeout(window.print,200);
-	</script>
  </body>
  </html>
