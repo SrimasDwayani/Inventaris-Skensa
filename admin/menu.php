@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../css/file.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <div class="break_menu">
 	
 </div>
@@ -6,7 +6,8 @@
 <ul>
 	<li><a href="home.php">Home</a></li>
 	<li><a href="?tampil=peminjaman">Peminjaman</a></li>
-	<li><a href="?tampil=pengembalian">Pengembalian</a></li>
 	<li><a href="?tampil=pesan">Pesan</a></li>
+	<li><a href="?tampil=bantuan">Bantuan</a></li>
+
 </ul>
 </div>

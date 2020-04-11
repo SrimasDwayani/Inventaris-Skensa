@@ -3,11 +3,16 @@
 
 	$id_petugas = $_POST['id_petugas'];
 	$nama_petugas = $_POST['nama_petugas'];
+	$nama_file=$_FILES['Foto']['name'];
+	$tmp_file=$_FILES['Foto']['tmp_name'];
+	$path="foto/" . $nama_file;
+	move_uploaded_file($tmp_file, $path);
 	$nip = $_POST['nip'];
-	$jurusan = $_POST['jurusan'];
+	$notelp = $_POST['notelp'];
+	$id_level = $_POST['id_level'];
 
-	$query = "INSERT INTO tb_petugas (id_petugas,nama_petugas,nip,jurusan)
-	VALUE ('$id_petugas', '$nama_petugas', '$nip', '$jurusan') ";
+	$query = "INSERT INTO tb_petugas (id_petugas,nama_petugas,foto,nip,notelp,id_level)
+	VALUE ('$id_petugas', '$nama_petugas', '$nama_file', '$nip', '$notelp','$id_level') ";
 
 	$hasil = mysqli_query($conn, $query);
 

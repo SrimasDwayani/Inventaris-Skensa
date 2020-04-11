@@ -7,11 +7,16 @@
 	$hasil=mysqli_query($conn,$query);
 
 ?>
+<style type="text/css">
+	
+</style>
 	<center>
 		<h1>Ubah Data Petugas</h1>
-		<form method="post" action="petugas_editproses.php">
+		<form method="post" action="petugas_editproses.php" enctype="multipart/form-data">
 
-		<?php while($data=mysqli_fetch_array($hasil)) { ?>
+		<?php
+			while($data=mysqli_fetch_array($hasil)) { 
+		?>
 
 		<table>
 			<tr>
@@ -19,12 +24,33 @@
 				<td><input type="text" name="nama_petugas" value="<?php echo $data['nama_petugas'] ?>"/></td>
 			</tr>
 			<tr>
+				<td>Foto</td>
+				<td><input type="file" name="Foto"></td>
+			</tr>
+			<tr>
 				<td>NIP</td>
 				<td><input type="number" name="nip" value="<?php echo $data['nip'] ?>"/> </td>
 			</tr>
 			<tr>
-				<td>Jurusan</td>
-				<td><input type="text" name="jurusan" value="<?php echo $data['jurusan'] ?>"/> </td>
+				<td>No. Telepon</td>
+				<td><input type="number" name="notelp" value="<?php echo $data['notelp'] ?>"/> </td>
+			</tr>
+			<tr>
+				<td>Level</td>
+				<td>
+					<select name="id_level">
+					<?php
+						include '../../conf/koneksi.php';
+						$query1="SELECT * FROM Level";
+						$view = mysqli_query($conn,$query1);
+						while ($data1 = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data1['id_level'];?>"><?php echo $data1['nama_level'];?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td></td>
@@ -35,6 +61,7 @@
 		</table>
 		<?php } ?>
 		</form>
+		</div>
 	</center>
 	<br>
 	

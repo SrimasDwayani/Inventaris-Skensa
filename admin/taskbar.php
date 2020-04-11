@@ -15,7 +15,7 @@
 			<a href="?tampil=petugas"><li>Petugas</li></a>
 		</ul>
 		<ul>
-			<a href="?tampil=gudang"><li>Gudang</li></a>
+			<a href="?tampil=ruang"><li>Ruang</li></a>
 		</ul>
 		<ul>
 			<a href="?tampil=barang_masuk"><li>Barang Masuk</li></a>
@@ -24,7 +24,7 @@
 			<a href="?tampil=barang_keluar"><li>Barang Keluar</li></a>
 		</ul>
 		<ul>
-			<a href="?tampil=logout"><li>Logout</li></a>
+			<a href="../index.php"><li>Logout</li></a>
 		</ul>
 	</div>
 </body>

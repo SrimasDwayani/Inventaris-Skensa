@@ -126,9 +126,11 @@ body{
 	text-decoration: none;
 	margin-left: 10px;
 	font-size: 14px;
+	border: 1px solid black;
 }
 .petugas table{
 	border-collapse: collapse;
+	text-align: center;
 }
 table th, td{
 	padding: 6px;
@@ -139,7 +141,28 @@ table th, td{
 	padding: 2px 8px;
 	text-decoration: none;
 }
-
+.ruang{
+	padding-top: 1px; 
+}
+.ruang form a{
+	background-color: #368a88;
+	color: white;
+	text-decoration: none;
+	padding: 4px 8px;
+	margin-left: 10px;
+	border: 1px solid black;
+	font-size: 16px;
+}
+.ruang table{
+	border-collapse: collapse;
+	text-align: center;
+}
+.ruang .a{
+	background-color: #368a88;
+	color: white;
+	padding: 2px 8px;
+	text-decoration: none;
+}
 /*------------------------ taskbar ----------------------*/
 .taskbar{
 	background-color: #f1f1f1;
@@ -182,15 +205,16 @@ table th, td{
 .crud_pet{
 	background-color: white;
 	width: 500px;
-	height: 330px;
-	padding-left: 60px;
+	height: auto;
+	padding-left: 70px;
 	padding-top: 20px;
 	margin-top: 160px;
-	margin-left: 430px;
+	margin-left: 440px;
 	box-shadow: 0 0 8px 3px black;
 }
 .crud_pet .sub input{
 	background-color: #368a88;
 	color: white;
 	padding: 6px;
+	margin-bottom: 30px;
 }
