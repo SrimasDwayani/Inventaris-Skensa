@@ -5,8 +5,14 @@
 	if ($tampil == "menu")
 		include ("menu/menu_tampil.php");
 
+	elseif ($tampil == "admin")
+		include ("admin/admin_tampil.php");
+
 	elseif ($tampil == "petugas")
 		include ("petugas/petugas_tampil.php");
+
+	elseif ($tampil == "level")
+		include ("level/level_tampil.php");
 
 	elseif ($tampil == "peminjaman")
 		include ("peminjaman/peminjaman_tampil.php");

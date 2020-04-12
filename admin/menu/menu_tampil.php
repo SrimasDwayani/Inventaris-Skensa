@@ -1,6 +1,9 @@
 <div class="box">
 	<div class="jurusan">
 		<a href=""><img src="../img/mm.jpg"></a>
+		<div class="text">
+			
+		</div>
 	</div>
 	<div class="jurusan">
 		<a href=""><img src="../img/rpl.jpeg"></a>

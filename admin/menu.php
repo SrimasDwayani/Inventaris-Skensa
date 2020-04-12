@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/ini.css">
 <div class="break_menu">
 	
 </div>

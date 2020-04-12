@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Inventaris SMK Negeri 1 Denpasar</title>
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/ini.css">
 </head>
 <body style="box-shadow: none;">
 	<div class="crud_pet">
@@ -21,7 +21,6 @@
 				<td>Keterangan</td>
 				<td><input type="text" name="keterangan" placeholder="Masukkan keterangan" required=""></td>
 			</tr>
-			<br>
 			<tr>
 				<td></td>
 				<td class="sub"><input type="submit" value="Tambah Ruang"></td>

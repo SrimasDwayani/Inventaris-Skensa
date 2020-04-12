@@ -2,7 +2,7 @@
 	include_once("../../conf/koneksi.php");
 	$id=$_GET['id'];
 
-	$query="SELECT * FROM ruang WHERE id_ruang='$id'";
+	$query="SELECT * FROM level WHERE id_level='$id'";
 
 	$hasil=mysqli_query($conn,$query);
 
@@ -11,10 +11,10 @@
 	body{
 		background-color: #f1f1f1;
 	}
-	.edit_ruang{
+	.edit_level{
 		background-color: white;
 		width: 400px;
-		height: 270px;
+		height: 200px;
 		padding-top: 20px;
 		margin-top: 200px;
 		margin-left: 480px;
@@ -30,13 +30,14 @@
 		background-color: #368a88;
 		color: white;
 		padding: 6px;
+		margin-top: 20px;
 	}
 </style>
 <body>
-	<div class="edit_ruang">
+	<div class="edit_level">
 	<center>
-		<h1>Edit Data Ruang</h1>
-		<form method="post" action="prosesedit_ruang.php">
+		<h1>Ubah Level / Jurusan</h1>
+		<form method="post" action="level_editproses.php">
 
 		<?php
 			while($data=mysqli_fetch_array($hasil)) { 
@@ -44,21 +45,13 @@
 
 		<table>
 			<tr>
-				<td>Nama Ruang</td>
-				<td><input type="text" name="nama_ruang" value="<?php echo $data['nama_ruang'] ?>"/></td>
-			</tr>
-			<tr>
-				<td>Kode_ruang</td>
-				<td><input type="number" name="kode_ruang" value="<?php echo $data['kode_ruang'] ?>"></td>
-			</tr>
-			<tr>
-				<td>Keterangan</td>
-				<td><input type="text" name="keterangan" value="<?php echo $data['keterangan'] ?>"/> </td>
+				<td>Nama Level</td>
+				<td><input type="text" name="nama_level" value="<?php echo $data['nama_level'] ?>"/></td>
 			</tr>
 			<tr>
 				<td></td>
 				<td>
-					<input type="hidden" name="id" value="<?php echo $data['id_ruang'] ?>">
+					<input type="hidden" name="id" value="<?php echo $data['id_level'] ?>">
 					<input class="in" type="submit" value="Ubah Data">
 				</td>
 			</tr>

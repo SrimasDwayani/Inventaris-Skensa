@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<title>Aplikasi Inventaris SMK Negeri 1 Denpasar</title>
-		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/ini.css">
 	</head>
 	<body>
 		<div id="container">

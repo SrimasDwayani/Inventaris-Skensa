@@ -3,12 +3,12 @@
 
 	$id= $_GET['id'];
 
-	$query="DELETE from tb_petugas WHERE id_petugas=$id";
+	$query="DELETE from ruang WHERE id_ruang=$id";
 
 	$hasil=mysqli_query($conn,$query);
 
 	if($hasil){
-		header('Location:http://localhost/Inventaris-Skensa/admin/home.php?tampil=petugas');
+		header('Location:http://localhost/Inventaris-Skensa/admin/home.php?tampil=ruang');
 	}else{
 		echo "Hapus data gagal!";
 	}

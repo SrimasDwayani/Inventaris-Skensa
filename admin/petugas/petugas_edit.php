@@ -7,17 +7,17 @@
 	$hasil=mysqli_query($conn,$query);
 
 ?>
-<style type="text/css">
-	
-</style>
+<link rel="stylesheet" type="text/css" href="../../css/file.css">
+<body style="box-shadow: none;">
+	<div class="crud_pet">
 	<center>
-		<h1>Ubah Data Petugas</h1>
 		<form method="post" action="petugas_editproses.php" enctype="multipart/form-data">
 
 		<?php
 			while($data=mysqli_fetch_array($hasil)) { 
 		?>
 
+		<h2>Ubah Data Petugas Inventaris</h2>
 		<table>
 			<tr>
 				<td>Nama Petugas</td>
@@ -54,14 +54,15 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td>
-				<input type="hidden" name="id" value="<?php echo $data['id_petugas'] ?>">
-				<input type="submit" value="Ubah Data"></td>
+				<td class="sub">
+					<input type="hidden" name="id" value="<?php echo $data['id_petugas'] ?>">
+					<input type="submit" value="Ubah Data">
+				</td>
 			</tr>
 		</table>
 		<?php } ?>
 		</form>
 		</div>
 	</center>
-	<br>
-	
+</div>
+</body>

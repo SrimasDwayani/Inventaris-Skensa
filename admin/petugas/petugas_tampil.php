@@ -16,7 +16,7 @@
  <html>
  <head>
  	<title>Aplikasi Inventaris SMKN 1 Denpasar</title>
- 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+ 	<link rel="stylesheet" type="text/css" href="../../css/ini.css">
  </head>
  <body>
  	<div class="petugas">
@@ -54,8 +54,8 @@
  						<td><?php echo $data['notelp']; ?></td>
  						<td><?php echo $data['nama_level']; ?></td>
  						<td>
- 							<a class="aksi" href="petugas/petugas_edit.php">Edit</a>  |
- 							<a class="aksi" href="petugas/petugas_hapus.php?id= <?php echo $data['id_petugas'] ?>" onclick = "return confirm(Apakah Anda yakin ingin menghapus <?php echo $data['nama_petugas']; ?>)">Hapus</a>
+ 							<a class="aksi" href="petugas/petugas_edit.php?id= <?php echo $data['id_petugas']; ?> ">Edit</a>  |
+ 							<a class="aksi" href="petugas/petugas_hapus.php?id= <?php echo $data['id_petugas']; ?>" onclick = "return confirm(Apakah Anda yakin ingin menghapus <?php echo $data['nama_petugas']; ?>)">Hapus</a>
  						</td>
  					</tr>
  			<?php $nomor++; } ?>

@@ -14,8 +14,9 @@
  <html>
  <head>
  	<title>Data Petugas Inventaris SKENSA</title>
+ 	<link rel="stylesheet" type="text/css" href="../../css/file.css">
  </head>
- <body>
+ <body style="box-shadow: none;">
  	<div class="petugas">
  	<h2 style="text-align: center;">Petugas Inventaris SMKN 1 Denpasar</h2>
  	<table border="1" align="center">
