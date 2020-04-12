@@ -24,10 +24,10 @@
 			<a href="?tampil=ruang"><li>Ruang</li></a>
 		</ul>
 		<ul>
-			<a href="?tampil=barang_masuk"><li>Barang Masuk</li></a>
+			<a href="?tampil=barang_masuk"><li>IN</li></a>
 		</ul>
 		<ul>
-			<a href="?tampil=barang_keluar"><li>Barang Keluar</li></a>
+			<a href="?tampil=barang_keluar"><li>OUT</li></a>
 		</ul>
 		<ul>
 			<a href="../index.php"><li>Logout</li></a>

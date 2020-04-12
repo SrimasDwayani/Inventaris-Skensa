@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2020 at 01:38 PM
+-- Generation Time: Apr 12, 2020 at 04:04 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -21,6 +21,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_inventaris`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id_admin` int(11) NOT NULL,
+  `nama_admin` text NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `nip` int(11) NOT NULL,
+  `password` varchar(15) NOT NULL,
+  `id_level` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id_admin`, `nama_admin`, `username`, `nip`, `password`, `id_level`) VALUES
+(1, 'admin', 'testttt876', 41542317, '', '6'),
+(2, 'testt', 'wican4132531', 1365924531, '', '1'),
+(3, 'test', 'iyaaa', 541253743, '', '11'),
+(4, 'test', 'testttttt', 87512424, '', '10');
 
 -- --------------------------------------------------------
 
@@ -79,7 +104,8 @@ INSERT INTO `level` (`id_level`, `nama_level`) VALUES
 (8, 'TBSM'),
 (9, 'TL'),
 (10, 'TP'),
-(11, 'AV');
+(11, 'AV'),
+(12, 'TEST EDIT');
 
 -- --------------------------------------------------------
 
@@ -137,7 +163,38 @@ CREATE TABLE `ruang` (
   `id_ruang` int(11) NOT NULL,
   `nama_ruang` text NOT NULL,
   `kode_ruang` int(11) NOT NULL,
-  `keterangan` text NOT NULL
+  `keterangan` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ruang`
+--
+
+INSERT INTO `ruang` (`id_ruang`, `nama_ruang`, `kode_ruang`, `keterangan`) VALUES
+(1, 'Ruang Kelas XI RPL 2', 202, '-'),
+(2, 'Ruang Kelas XI RPL 1', 202, '-'),
+(5, 'Ruang Kelas XII RPL 2 ', 203, '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_barang_masuk`
+--
+
+CREATE TABLE `tb_barang_masuk` (
+  `id_barang` int(11) NOT NULL,
+  `kode_barang` int(11) NOT NULL,
+  `nama_barang` varchar(20) NOT NULL,
+  `nomor_register` int(11) NOT NULL,
+  `merk` varchar(20) NOT NULL,
+  `ukuran` int(11) NOT NULL,
+  `bahan` varchar(20) NOT NULL,
+  `asal` varchar(20) NOT NULL,
+  `tahun_pembelian` int(11) NOT NULL,
+  `harga` int(11) NOT NULL,
+  `keterangan` varchar(11) NOT NULL,
+  `keadaan` varchar(20) NOT NULL,
+  `lokasi` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -151,7 +208,7 @@ CREATE TABLE `tb_petugas` (
   `nama_petugas` text NOT NULL,
   `foto` text NOT NULL,
   `nip` int(11) NOT NULL,
-  `notelp` int(20) NOT NULL,
+  `notelp` varchar(100) NOT NULL,
   `id_level` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -160,22 +217,29 @@ CREATE TABLE `tb_petugas` (
 --
 
 INSERT INTO `tb_petugas` (`id_petugas`, `nama_petugas`, `foto`, `nip`, `notelp`, `id_level`) VALUES
-(1, 'Test 123', '', 123456, 0, 0),
-(2, 'Testt', '', 243155734, 0, 0),
-(3, 'test', '', 65131242, 0, 0),
-(4, 'Dwicandra', '', 876342516, 0, 0),
-(6, 'wican', '', 4532156, 0, 0),
-(7, 'Dwi Candra', '', 34215432, 0, 0),
-(8, 'test testttt', '', 2147483647, 0, 0),
-(9, 'Testtt', '', 12361425, 0, 0),
-(10, 'Testing', '', 76132513, 0, 0),
-(11, 'wican', '', 515231547, 0, 0),
-(12, 'Siapa saja', '', 541726413, 0, 0),
-(13, 'Test gam', '', 7614253, 2147483647, 0);
+(3, 'test', '', 65131242, '0', 0),
+(4, 'Dwicandra', '', 876342516, '0', 0),
+(6, 'wican', '', 4532156, '0', 0),
+(7, 'Dwi Candra', '', 34215432, '0', 0),
+(8, 'test testttt', '', 2147483647, '0', 0),
+(9, 'Testtt', '', 12361425, '0', 0),
+(10, 'Testing', '', 76132513, '0', 0),
+(11, 'wican', '', 515231547, '0', 0),
+(12, 'Siapa saja', '', 541726413, '0', 0),
+(13, 'Test gam', '', 7614253, '2147483647', 0),
+(15, 'Test', 'IMG_20200202_105742.jpg', 71642513, '08882000615', 4),
+(17, 'Test 123', '', 12398526, '089541200615', 1),
+(19, 'dwicandra', 'IMG_20200202_105742.jpg', 4132445, '089542317624', 9);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id_admin`);
 
 --
 -- Indexes for table `detail_pinjam`
@@ -214,6 +278,12 @@ ALTER TABLE `ruang`
   ADD PRIMARY KEY (`id_ruang`);
 
 --
+-- Indexes for table `tb_barang_masuk`
+--
+ALTER TABLE `tb_barang_masuk`
+  ADD PRIMARY KEY (`id_barang`);
+
+--
 -- Indexes for table `tb_petugas`
 --
 ALTER TABLE `tb_petugas`
@@ -222,6 +292,12 @@ ALTER TABLE `tb_petugas`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `detail_pinjam`
@@ -239,7 +315,7 @@ ALTER TABLE `inventaris`
 -- AUTO_INCREMENT for table `level`
 --
 ALTER TABLE `level`
-  MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `peminjaman`
@@ -257,13 +333,13 @@ ALTER TABLE `register`
 -- AUTO_INCREMENT for table `ruang`
 --
 ALTER TABLE `ruang`
-  MODIFY `id_ruang` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ruang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_petugas`
 --
 ALTER TABLE `tb_petugas`
-  MODIFY `id_petugas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_petugas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

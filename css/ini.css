@@ -14,7 +14,7 @@ body{
 /*------------------------- header -----------------------*/
 #header{
 	height: 110px;
-	background: #203354;
+	background: #203346;
 	color: white;
 }
 .header .logo{
@@ -69,7 +69,7 @@ body{
 	float: left;
 }
 #tambah #content{
-	margin-left: 190px;
+	margin-left: 210px;
 }
 
 /*----------------------Bagian Menu---------------------*/ 
@@ -82,8 +82,6 @@ body{
 	margin: 0;
 	padding: 0;
 	display: flex;
-}
-.menu ul li{
 	float: left;
 	list-style: none;
 }
@@ -100,7 +98,7 @@ body{
 	color: white;
 }
 .box{
-	margin-left: 30px;
+	margin-left: 20px;
 	padding-top: 20px;
 }
 .box .jurusan{
@@ -114,6 +112,8 @@ body{
 	width: 170px;
 	border: 3px solid gray;
 }
+
+/*------ Petugas ------*/
 .petugas{
 	text-align: center;
 	padding-top: 1px;
@@ -141,6 +141,8 @@ table th, td{
 	padding: 2px 8px;
 	text-decoration: none;
 }
+
+/*----- Ruang -----*/
 .ruang{
 	padding-top: 1px; 
 }
@@ -166,14 +168,14 @@ table th, td{
 /*------------------------ taskbar ----------------------*/
 .taskbar{
 	background-color: #f1f1f1;
-	width: 190px;
+	width: 210px;
 	height: 460px;
 	padding: 10px 0px;
 }
 .taskbar .profil img{
 	width: 80px;
 	height: 80px;
-	margin-left: 55px;
+	margin-left: 65px;
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
@@ -189,7 +191,7 @@ table th, td{
 .taskbar ul a li{
 	list-style: none;
 	width: 150px;
-	margin: 5px 20px;
+	margin: 5px 30px;
 	padding: 5px 20px;
 	background-color: white;
 	color: black;

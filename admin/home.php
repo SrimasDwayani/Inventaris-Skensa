@@ -9,6 +9,12 @@
 	<head>
 		<title>Aplikasi Inventaris SMK Negeri 1 Denpasar</title>
 		<link rel="stylesheet" href="../css/ini.css">
+		<!—- ShareThis BEGIN -—>
+		<script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5e92fac04749a2001295a139&product=sticky-share-buttons"></script>
+		<!—- ShareThis END -—>
+		<!-- Start of  Zendesk Widget script -->
+		<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=2b74eb45-c65c-4f7b-acfd-733b93e76535"> </script>
+		<!-- End of  Zendesk Widget script -->
 	</head>
 	<body>
 		<div id="container">
@@ -28,10 +34,11 @@
 					<?php include("konten.php"); ?>
 				</div>
 			</div>
-
 			<div id="footer">
 				<p>Copyright &copy; INVENTARIS SMK Negeri 1 Denpasar</p> 
 			</div>
 		</div>
+		<script type="text/javascript" src="../../js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.js"></script>
 	</body>
 </html>
