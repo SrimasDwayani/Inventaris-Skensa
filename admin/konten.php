@@ -5,6 +5,9 @@
 	if ($tampil == "menu")
 		include ("menu/menu_tampil.php");
 
+	elseif ($tampil == "multimedia")
+		include ("multimedia/mm_tampil.php");
+
 	elseif ($tampil == "admin")
 		include ("admin/admin_tampil.php");
 

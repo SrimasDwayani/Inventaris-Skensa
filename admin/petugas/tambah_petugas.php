@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Tambah Petugas</title>
-	<link rel="stylesheet" type="text/css" href="../../css/ini.css">
+	<link rel="stylesheet" type="text/css" href="../../css/text.css">
 </head>
 <body style="box-shadow: none;">
 	<div class="crud_pet">

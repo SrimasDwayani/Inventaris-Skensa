@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../css/ini.css">
+<link rel="stylesheet" type="text/css" href="../css/text.css">
 <div class="menu">
 <ul>
 	<li><a href="home.php">Home</a></li>
