@@ -116,7 +116,7 @@
 	</style>
 </head>
 <body>
-	<form action="reg-log/login.php" method="post">
+	<form action="reg_log/login.php" method="post">
 	<div class="login">
 		<div class="avatar">
 			<i></i>
