@@ -1,6 +1,6 @@
 <div class="box">
 	<div class="jurusan">
-		<a href="?tampil=multimedia"><img src="../img/mm.jpg">
+		<a href="multimedia/mm_tampil.php"><img src="../img/mm.jpg">
 			<div class="text">
 				
 			</div>

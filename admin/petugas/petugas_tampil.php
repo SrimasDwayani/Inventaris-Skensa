@@ -16,7 +16,7 @@
  <html>
  <head>
  	<title>Aplikasi Inventaris SMKN 1 Denpasar</title>
- 	<link rel="stylesheet" type="text/css" href="../../css/text.css">
+ 	<link rel="stylesheet" type="text/css" href="../../css/doc.css">
  </head>
  <body>
  	<div class="petugas">

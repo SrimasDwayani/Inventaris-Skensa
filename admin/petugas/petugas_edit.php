@@ -7,7 +7,7 @@
 	$hasil=mysqli_query($conn,$query);
 
 ?>
-<link rel="stylesheet" type="text/css" href="../../css/text.css">
+<link rel="stylesheet" type="text/css" href="../../css/doc.css">
 <body style="box-shadow: none;">
 	<div class="crud_pet">
 	<center>

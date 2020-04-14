@@ -238,3 +238,41 @@ table th, td{
 	padding: 6px;
 	margin-bottom: 30px;
 }
+.inventaris{
+	background-color: white;
+	width: 540px;
+	height: 550px;
+	padding-left: 95px;
+	padding-top: 45px;
+	margin-top: 50px;
+	margin-left: 430px;
+	box-shadow: 0 0 8px 3px black;
+}
+.inven_data table{
+	border-collapse: collapse;
+	margin-top: 15px;
+	text-align: center;
+}
+.inven_data h2{
+	color: #364a88;
+}
+.inven_data a{
+	background-color: #364a88;
+	color: white;
+	text-decoration: none;
+	padding: 4px 8px;
+	margin-left: 10px;
+	border: 1px solid black;
+	font-size: 16px;
+}
+.inventaris h2{
+	color: #368a88;
+	font-weight: bold;
+	margin-left: 50px;
+}
+.inventaris .sub input{
+	background-color: #368a88;
+	color: white;
+	padding: 6px;
+	margin-top: 20px;
+}
