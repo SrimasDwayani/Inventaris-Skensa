@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<title>Aplikasi Inventaris SMK Negeri 1 Denpasar</title>
-		<link rel="stylesheet" href="../css/doc.css">
+		<link rel="stylesheet" href="../css/foll.css">
 		<!—- ShareThis BEGIN -—>
 		<script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5e92fac04749a2001295a139&product=sticky-share-buttons"></script>
 		<!—- ShareThis END -—>

@@ -14,6 +14,9 @@
 	elseif ($tampil == "level")
 		include ("level/level_tampil.php");
 
+	elseif ($tampil == "jenis")
+		include ("jenis/tampil_jenis.php");
+
 	elseif ($tampil == "peminjaman")
 		include ("peminjaman/peminjaman_tampil.php");
 

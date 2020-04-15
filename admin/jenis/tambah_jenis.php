@@ -7,15 +7,15 @@
 <body style="box-shadow: none;">
 	<div class="crud_pet">
 	<h2>Tambah Ruangan Inventaris</h2>
-	<form method="post" action="tambahproses_ruang.php">
+	<form method="post" action="tambahproses_jenis.php">
 		<table>
 			<tr>
 				<td>Nama Ruang</td>
-				<td><input type="text" name="nama_ruang" placeholder="Masukkan nama ruang" required=""></td>
+				<td><input type="text" name="nama_jenis" placeholder="Masukkan nama jenis" required=""></td>
 			</tr>
 			<tr>
 				<td>Kode Ruang</td>
-				<td><input type="number" name="kode_ruang" placeholder="Masukkan kode ruang" required=""></td>
+				<td><input type="number" name="kode_jenis" placeholder="Masukkan kode jenis" required=""></td>
 			</tr>
 			<tr>
 				<td>Keterangan</td>

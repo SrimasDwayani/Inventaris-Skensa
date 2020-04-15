@@ -265,6 +265,12 @@ table th, td{
 	border: 1px solid black;
 	font-size: 16px;
 }
+.inven_data button{
+	background-color: #364a88;
+	color: white;
+	margin-bottom: 15px;
+	padding: 4px 8px;
+}
 .inventaris h2{
 	color: #368a88;
 	font-weight: bold;

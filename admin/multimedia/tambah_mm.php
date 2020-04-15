@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Inventaris SMK Negeri 1 Denpasar</title>
-	<link rel="stylesheet" type="text/css" href="../../css/doc.css">
+	<link rel="stylesheet" type="text/css" href="../../css/foll.css">
 </head>
 <body style="box-shadow: none;">
 	<div class="inventaris">
@@ -27,7 +27,20 @@
 			</tr>
 			<tr>
 				<td>Id Jenis</td>
-				<td><input type="number" name="id_jenis" placeholder="Masukkan id jenis" required=""></td>
+				<td>
+					<select name="id_jenis">
+					<?php
+						include '../../conf/koneksi.php';
+						$query="SELECT * FROM jenis";
+						$view = mysqli_query($conn,$query);
+						while ($data = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data['id_jenis']?>"><?php echo $data['nama_jenis']?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td>Tanggal Register</td>
@@ -35,7 +48,20 @@
 			</tr>
 			<tr>
 				<td>Id Ruang</td>
-				<td><input type="number" name="id_ruang" placeholder="Masukkan id ruang" required=""></td>
+				<td>
+					<select name="id_ruang">
+					<?php
+						include '../../conf/koneksi.php';
+						$query="SELECT * FROM ruang";
+						$view = mysqli_query($conn,$query);
+						while ($data = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data['id_ruang']?>"><?php echo $data['nama_ruang']?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td>Kode Inventaris</td>
@@ -43,7 +69,20 @@
 			</tr>
 			<tr>
 				<td>Id Petugas</td>
-				<td><input type="number" name="id_petugas" placeholder="Masukkan id petugas" required=""></td>
+				<td>
+					<select name="id_petugas">
+					<?php
+						include '../../conf/koneksi.php';
+						$query="SELECT * FROM tb_petugas";
+						$view = mysqli_query($conn,$query);
+						while ($data = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data['id_petugas']?>"><?php echo $data['nama_petugas']?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td></td>

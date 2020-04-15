@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../css/doc.css">
+<link rel="stylesheet" type="text/css" href="../css/foll.css">
 <div class="menu">
 <ul>
 	<li><a href="home.php">Home</a></li>

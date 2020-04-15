@@ -21,6 +21,9 @@
 			<a href="?tampil=level"><li>Level</li></a>
 		</ul>
 		<ul>
+			<a href="?tampil=jenis"><li>Jenis</li></a>
+		</ul>
+		<ul>
 			<a href="?tampil=ruang"><li>Ruang</li></a>
 		</ul>
 		<ul>
