@@ -141,7 +141,7 @@
 		</button>
 
 		<div class="bottom">
-			<a href="reg-log/register.php">Register</a>
+			<a href="reg_log/register.php">Register</a>
 			<a href="">Forgot Password</a>
 		</div>
 	</div>
