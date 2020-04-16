@@ -41,7 +41,7 @@
 					<select name="id_level">
 					<?php
 						include '../../conf/koneksi.php';
-						$query1="SELECT * FROM Level";
+						$query1="SELECT * FROM level";
 						$view = mysqli_query($conn,$query1);
 						while ($data1 = mysqli_fetch_array($view)){
 							?> 

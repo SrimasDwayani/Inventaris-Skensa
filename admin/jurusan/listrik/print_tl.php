@@ -1,12 +1,12 @@
 <?php 
-	include_once("../../conf/koneksi.php");
+	include_once("../../../conf/koneksi.php");
 
-	$query= "SELECT * FROM mm";
+	$query= "SELECT * FROM tl";
 
 	$hasil = mysqli_query($conn, $query);
 	if (isset($_POST['cari'])) {
 		$cari= $_POST['keywoard'];
-		$hasil  = mysqli_query($conn, "SELECT * FROM mm WHERE nama_barang like '%$cari%' ");
+		$hasil  = mysqli_query($conn, "SELECT * FROM tl WHERE nama_barang like '%$cari%' ");
 	}
 
  ?>
@@ -21,15 +21,6 @@
  	<div class="inven_data">
  	<center>
  		<h2>Inventaris Barang Jurusan Multimedia</h2>
- 		<button>Kembali Ke Home</button>
- 		<form action="" method="POST">
- 			<input type="text" name="keywoard" placeholder="Cari -- Nama Barang --" autofocus="">
- 		<button name="cari" type="submit">Cari</button>
- 		<a href="tambah_mm.php">Tambah</a>
- 		<a href="cetak_mm.php" target="_blank">Print</a>
- 		<a href="excel_mm.php" target="_blank">Excel</a>
- 		<a href="reset.php">Reset</a>
- 		</form>
  		<table border="1" align="center">
  			<tr>
  				<th>NO</th>
@@ -43,7 +34,6 @@
  				<th>Id Ruang</th>
  				<th>Kode Inventaris</th>
  				<th>Id_petugas</th>
- 				<th>Aksi</th>
  			</tr>
 
  			<?php 	
@@ -62,10 +52,6 @@
  							<td><?php echo $data['id_ruang']; ?></td>
  							<td><?php echo $data['kode_inventaris']; ?></td>
  							<td><?php echo $data['id_petugas']; ?></td>
- 							<td>
- 							<a class="a" href="edit_mm.php?id= <?php echo $data['id_inventaris']; ?>">Edit</a>  |
- 							<a class="a" href="hapus_mm.php?id= <?php echo $data['id_inventaris'] ?>" onclick = "return confirm(Apakah Anda yakin ingin menghapus <?php echo $data['nama_barang']; ?>)">Hapus</a>
- 						</td>
  						</tr>
  					<?php $nomor++; 
  				}
@@ -73,5 +59,9 @@
  		</table>
  	</center>
  	</div>
+ 	<script>
+		window.print();
+		setTimeout(window.print,200);
+	</script>
  </body>
  </html>

@@ -3,12 +3,12 @@
 
 	$id= $_GET['id'];
 
-	$query="DELETE FROM mm WHERE id_inventaris=$id";
+	$query="DELETE FROM jenis WHERE id_jenis=$id";
 
 	$hasil=mysqli_query($conn,$query);
 
 	if($hasil){
-		header('Location:mm_tampil.php');
+		header('Location:tampil_jenis.php');
 	}else{
 		echo "Hapus data gagal!";
 	}

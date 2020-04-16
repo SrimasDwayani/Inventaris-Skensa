@@ -1,17 +1,17 @@
 <?php 
-	include_once("../../conf/koneksi.php");
+	include_once("../../../conf/koneksi.php");
 	$id=$_GET['id'];
 
-	$query="SELECT * FROM mm WHERE id_inventaris='$id'";
+	$query="SELECT * FROM tl WHERE id_inventaris='$id'";
 
 	$hasil=mysqli_query($conn,$query);
 
 ?>
-<link rel="stylesheet" type="text/css" href="../../css/foll.css">
+<link rel="stylesheet" type="text/css" href="../../../css/foll.css">
 <body style="box-shadow: none;">
 		<div class="inventaris">
 		<h2>Edit Data Inventaris</h2>
-		<form method="post" action="prosesedit_mm.php">
+		<form method="post" action="prosesedit_tl.php">
 
 		<?php
 			while($data=mysqli_fetch_array($hasil)) { 
@@ -36,7 +36,20 @@
 			</tr>
 			<tr>
 				<td>Id Jenis</td>
-				<td><input type="number" name="id_jenis" value="<?php echo $data['id_jenis'] ?>"/> </td>
+				<td>
+					<select name="id_level">
+					<?php
+						include '../../conf/koneksi.php';
+						$query1="SELECT * FROM level";
+						$view = mysqli_query($conn,$query1);
+						while ($data1 = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data1['id_level'];?>"><?php echo $data1['nama_level'];?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td>Tanggal Register</td>
@@ -44,7 +57,20 @@
 			</tr>
 			<tr>
 				<td>Id Ruang</td>
-				<td><input type="number" name="id_ruang" value="<?php echo $data['id_ruang'] ?>"/> </td>
+				<td>
+					<select name="id_ruang">
+					<?php
+						include '../../conf/koneksi.php';
+						$query1="SELECT * FROM ruang";
+						$view = mysqli_query($conn,$query1);
+						while ($data1 = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data1['id_ruang'];?>"><?php echo $data1['nama_ruang'];?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td>Kode Inventaris</td>
@@ -52,7 +78,20 @@
 			</tr>
 			<tr>
 				<td>Id Petugas</td>
-				<td><input type="number" name="id_petugas" value="<?php echo $data['id_petugas'] ?>"/> </td>
+				<td>
+					<select name="id_petugas">
+					<?php
+						include '../../conf/koneksi.php';
+						$query1="SELECT * FROM tb_petugas";
+						$view = mysqli_query($conn,$query1);
+						while ($data1 = mysqli_fetch_array($view)){
+							?> 
+								<option value="<?php echo $data1['id_petugas'];?>"><?php echo $data1['nama_petugas'];?></option>
+							<?php
+						}
+					?>
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td></td>

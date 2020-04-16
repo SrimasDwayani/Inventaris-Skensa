@@ -1,5 +1,5 @@
 <?php
-	include_once("../../conf/koneksi.php");
+	include_once("../../../conf/koneksi.php");
 
 	$id=$_POST['id'];
 	$nama_barang=$_POST['nama_barang'];

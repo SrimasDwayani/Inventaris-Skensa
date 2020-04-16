@@ -1,6 +1,6 @@
 <div class="box">
 	<div class="jurusan">
-		<a href="multimedia/mm_tampil.php"><img src="../img/mm.jpg">
+		<a href="jurusan/multimedia/mm_tampil.php"><img src="../img/mm.jpg">
 			<div class="text">
 				
 			</div>
@@ -10,7 +10,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/rpl.jpeg">
+		<a href="jurusan/rpl/tampil_rpl.php"><img src="../img/rpl.jpeg">
 			<div class="text">
 				
 			</div>
@@ -20,7 +20,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/tkj.png">
+		<a href="jurusan/tkj/tampil_tkj.php"><img src="../img/tkj.png">
 			<div class="text">
 				
 			</div>
@@ -30,7 +30,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/dpib.jpg">
+		<a href="jurusan/dpib/tampil_dpib.php"><img src="../img/dpib.jpg">
 			<div class="text">
 				
 			</div>
@@ -40,7 +40,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/bkp.jpg">
+		<a href="jurusan/bkp/tampil_bkp.php"><img src="../img/bkp.jpg">
 			<div class="text">
 				
 			</div>
@@ -50,7 +50,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/av.jpg">
+		<a href="jurusan/audio_video/tampil_av.php"><img src="../img/av.jpg">
 			<div class="text">
 			</div>
 			<div class="h4">
@@ -59,7 +59,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/tl.png">
+		<a href="jurusan/listrik/tampil_tl.php"><img src="../img/tl.png">
 			<div class="text">
 				
 			</div>
@@ -69,7 +69,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/tp.jpg">
+		<a href="jurusan/pendingin/tampil_tp.php"><img src="../img/tp.jpg">
 			<div class="text">
 				
 			</div>
@@ -79,7 +79,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/tbsm.jpg">
+		<a href="jurusan/tbsm/tampil_tbsm.php"><img src="../img/tbsm.jpg">
 			<div class="text">
 				
 			</div>
@@ -89,7 +89,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/tkro.jpg">
+		<a href="jurusan/tkro/tampil_tkro.php"><img src="../img/tkro.jpg">
 			<div class="text">
 				
 			</div>
@@ -99,7 +99,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href=""><img src="../img/pm.jpg">
+		<a href="jurusan/permesinan/tampil_pm.php"><img src="../img/pm.jpg">
 			<div class="text">
 				
 			</div>

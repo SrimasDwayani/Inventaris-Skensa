@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Inventaris SMK Negeri 1 Denpasar</title>
-	<link rel="stylesheet" type="text/css" href="../../css/foll.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/foll.css">
 </head>
 <body style="box-shadow: none;">
 	<div class="inventaris">
 	<h2>Tambah Inventaris</h2>
-	<form method="post" action="tambahproses_mm.php">
+	<form method="post" action="tambahproses_tl.php">
 		<table>
 			<tr>
 				<td>Nama Barang</td>

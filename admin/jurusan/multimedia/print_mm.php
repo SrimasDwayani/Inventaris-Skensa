@@ -1,5 +1,5 @@
 <?php 
-	include_once("../../conf/koneksi.php");
+	include_once("../../../conf/koneksi.php");
 
 	$query= "SELECT * FROM mm";
 
@@ -15,7 +15,7 @@
  <html>
  <head>
  	<title>Inventaris SMK Negeri 1 Denpasar</title>
- 	<link rel="stylesheet" type="text/css" href="../../css/doc.css">
+ 	<link rel="stylesheet" type="text/css" href="../../css/foll.css">
  </head>
  <body style="box-shadow: none; background-color: white;">
  	<div class="inven_data">
@@ -59,5 +59,9 @@
  		</table>
  	</center>
  	</div>
+ 	<script>
+		window.print();
+		setTimeout(window.print,200);
+	</script>
  </body>
  </html>
