@@ -10,56 +10,59 @@
 			padding: 0;
 			font-family: roboto;
 		}
-
-		.login1 {
+		.preload {
 			width: 100%;
 			height: 100%;
-			background: #f7f4f4;
+			background: #222831;
 			position: fixed;
 			top: 0;
 			left: 0;
-			2-index: 1;	
+			z-index: 1;	
 		}
-
 		.logo {
 			width: 600px;
 			height: 150px;
-			margin-top: 150px;
+			margin-top: 40px;
 			margin-left: 450px;
-			margin-top: 100px;
 		}
-
-		.loader1, .loader {
-			position: absolute;
-			border: 1px solid transparent;
-			border-radius: 50%;
-			margin-left: 670px;
-		}
-
 		.loader-frame {
+			width: 70px;
+			height: 70px;
+			margin: auto;
+			margin-top: 310px;
+			position: relative;
+		}
+		.loader1, .loader2 {
+			position: absolute;
+			border: 5px solid transparent;
+			border-radius: 50%;
 		}
 
 		.loader1 {
-			width: 60px;
-			height: 60px;
-			border-top: 1px solid #eaffd0;
-			border-bottom: 1px solid #eaffd0;
-			animation: clockwisespin 2s;
+			width: 70px;
+			height: 70px;
+			border-top: 5px solid #00adb5;
+			border-bottom: 5px solid #00adb5;
+			animation: clockwisespin 2s linear 3;
 		}
 
 		.loader2 {
-			width: 50px;
-			height: 50px;
-			border-left: 1px solid #95e1d3;
-			border-right: 1px solid #95e1d3;
-			animation: clockwisespin 2s;
+			width: 60px;
+			height: 60px;
+			border-left: 5px solid #eeeeee;
+			border-right: 5px solid #eeeeee;
+			left: 5px; top: 5px;
+			animation: anticlockwisespin 2s linear 3;
 		}
 
 		@keyframes clockwisespin {
 			from {transform: rotate(0deg);}
 			to {transform: rotate(360deg);}
 		}
-
+		@keyframes anticlockwisespin {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(-360deg);}
+		}
 		@keyframes fadeout {
 			from {opacity: 1;}
 			to {opacity: 0;}
@@ -68,16 +71,16 @@
 </head>
 <body>
 
-	<div class="reg-log" id="reg-log">
+	<div class="preload" id="preload">
 		<div class="logo">
-			<img src="img/logoss.jpg">
+			<img src="img/logoweb.png">
 		</div>
 		<div class="loader-frame">
 			<div class="loader1" id="loader1"></div>
 			<div class="loader2" id="loader2"></div>
 		</div>
 	
-	<script src="scriptss.js"></script>
+	<script src="script.js"></script>
 
 </body>
 </html>
