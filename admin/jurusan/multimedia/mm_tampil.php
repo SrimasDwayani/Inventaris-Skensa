@@ -21,7 +21,6 @@
  	<div class="inven_data">
  	<center>
  		<h2>Inventaris Barang Jurusan Multimedia</h2>
- 		<a href="../home.php"><button>Kembali Ke Home</button></a>
  		<form action="" method="POST">
  			<input type="text" name="keywoard" placeholder="Cari -- Nama Barang --" autofocus="">
  		<button name="cari" type="submit">Cari</button>
@@ -29,6 +28,7 @@
  		<a href="print_mm.php" target="_blank">Print</a>
  		<a href="excel_mm.php" target="_blank">Excel</a>
  		<a href="reset.php">Reset</a>
+ 		<a href="../../home.php">Kembali Ke Home</a>
  		</form>
  		<table border="1" align="center">
  			<tr>

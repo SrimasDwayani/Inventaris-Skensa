@@ -262,13 +262,9 @@ table th, td{
 	text-decoration: none;
 	padding: 4px 8px;
 	margin-left: 10px;
+	margin-bottom: 15px;
 	border: 1px solid black;
 	font-size: 16px;
-}
-.inven_data a button{
-	background-color: #364a88;
-	color: white;
-	margin-bottom: 15px;
 }
 .inventaris h2{
 	color: #368a88;
