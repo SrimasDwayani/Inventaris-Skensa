@@ -33,7 +33,7 @@
 			<a href="?tampil=barang_keluar"><li>OUT</li></a>
 		</ul>
 		<ul>
-			<a href="../index.php"><li>Logout</li></a>
+			<a href="../index.html"><li>Logout</li></a>
 		</ul>
 	</div>
 </body>
