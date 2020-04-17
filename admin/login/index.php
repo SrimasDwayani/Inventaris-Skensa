@@ -9,7 +9,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url(../img/gam2.jpg);
+			background-image: url(../../img/gam2.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-attachment: fixed; 
@@ -126,7 +126,7 @@
 
 		<div class="box-login">
 			<i class="fas fa-envelope"></i>
-			<input type="number" name="nis" placeholder="NIS" required="">
+			<input type="number" name="nip" placeholder="NIP" required="">
 		</div>
 
 
@@ -141,7 +141,6 @@
 		</button>
 
 		<div class="bottom">
-			<a href="register.php">Register</a>
 			<a href="">Forgot Password</a>
 		</div>
 	</div>

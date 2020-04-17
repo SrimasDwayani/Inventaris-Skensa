@@ -37,14 +37,14 @@
 			<tr>
 				<td>Id Jenis</td>
 				<td>
-					<select name="id_level">
+					<select name="id_jenis">
 					<?php
 						include '../../conf/koneksi.php';
-						$query1="SELECT * FROM level";
+						$query1="SELECT * FROM jenis";
 						$view = mysqli_query($conn,$query1);
 						while ($data1 = mysqli_fetch_array($view)){
 							?> 
-								<option value="<?php echo $data1['id_level'];?>"><?php echo $data1['nama_level'];?></option>
+								<option value="<?php echo $data1['id_jenis'];?>"><?php echo $data1['nama_jenis'];?></option>
 							<?php
 						}
 					?>

@@ -5,7 +5,7 @@
 	<style>
 		body {
 		  font-family: Arial, Helvetica, -serif;
-		  background-image: url(../img/gam.jpg);
+		  background-image: url(../../img/gam.jpg);
 		  height: 400px;
 		  width: 320px;
 		  margin-left: 530px;

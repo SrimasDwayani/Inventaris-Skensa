@@ -30,7 +30,7 @@
 				<td>
 					<select name="id_jenis">
 					<?php
-						include '../../conf/koneksi.php';
+						include '../../../conf/koneksi.php';
 						$query="SELECT * FROM jenis";
 						$view = mysqli_query($conn,$query);
 						while ($data = mysqli_fetch_array($view)){

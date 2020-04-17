@@ -44,11 +44,11 @@
 
 		<table>
 			<tr>
-				<td>Nama Ruang</td>
+				<td>Nama Jenis</td>
 				<td><input type="text" name="nama_jenis" value="<?php echo $data['nama_jenis'] ?>"/></td>
 			</tr>
 			<tr>
-				<td>Kode_ruang</td>
+				<td>Kode Jenis</td>
 				<td><input type="number" name="kode_jenis" value="<?php echo $data['kode_jenis'] ?>"></td>
 			</tr>
 			<tr>

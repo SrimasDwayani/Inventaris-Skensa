@@ -20,7 +20,7 @@
  <body>
  	<div class="ruang">
  	<center>
- 		<h2>Jenis Barang Inventaris</h2>
+ 		<h2>Jenis (Merk/Type) Barang Inventaris</h2>
  		<form action="" method="POST">
  			<input type="text" name="keywoard" placeholder="Cari -- Nama Jenis --" autofocus="">
  		<button name="cari" type="submit">Cari</button>

@@ -250,8 +250,8 @@ table th, td{
 }
 .inven_data table{
 	border-collapse: collapse;
-	margin-top: 15px;
 	text-align: center;
+	margin: 15px 40px;
 }
 .inven_data h2{
 	color: #364a88;
@@ -265,6 +265,9 @@ table th, td{
 	margin-bottom: 15px;
 	border: 1px solid black;
 	font-size: 16px;
+}
+.inven_data .a{
+	margin-top: 10px;
 }
 .inventaris h2{
 	color: #368a88;

@@ -10,11 +10,11 @@
 	<form method="post" action="tambahproses_jenis.php">
 		<table>
 			<tr>
-				<td>Nama Ruang</td>
+				<td>Nama Jenis</td>
 				<td><input type="text" name="nama_jenis" placeholder="Masukkan nama jenis" required=""></td>
 			</tr>
 			<tr>
-				<td>Kode Ruang</td>
+				<td>Kode Jenis</td>
 				<td><input type="number" name="kode_jenis" placeholder="Masukkan kode jenis" required=""></td>
 			</tr>
 			<tr>
@@ -23,7 +23,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td class="sub"><input type="submit" value="Tambah Ruang"></td>
+				<td class="sub"><input type="submit" value="Tambah Jenis"></td>
 			</tr>
 		</table>
 	</form>
