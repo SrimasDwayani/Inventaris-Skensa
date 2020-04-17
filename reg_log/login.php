@@ -11,7 +11,7 @@ $verty = mysqli_fetch_assoc($has);
  
 if($cek > 0){
 	if (password_verify($password,$verty['password'])) {
-		header('location:../admin/home.php');
+		header('location:../user/home.php');
 	}else{
 		echo "password salah";
 	}
