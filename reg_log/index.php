@@ -9,7 +9,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url(img/gam2.jpg);
+			background-image: url(../img/gam2.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-attachment: fixed; 
@@ -31,7 +31,7 @@
 
 		.avatar {
 			font-size: 50px;
-			background: url(img/logo1.jpg);
+			background: url(../img/logo1.jpg);
 			width: 80px;
 			height: 80px;
 			line-height:80px ;
@@ -116,7 +116,7 @@
 	</style>
 </head>
 <body>
-	<form action="reg_log/login.php" method="post">
+	<form action="login.php" method="post">
 	<div class="login">
 		<div class="avatar">
 			<i></i>
@@ -141,7 +141,7 @@
 		</button>
 
 		<div class="bottom">
-			<a href="reg_log/register.php">Register</a>
+			<a href="register.php">Register</a>
 			<a href="">Forgot Password</a>
 		</div>
 	</div>

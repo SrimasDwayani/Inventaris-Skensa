@@ -127,7 +127,7 @@
 
 	    <button class="daftar" type="submit" name="register">DAFTAR</button>
 
-	    <p>Already have an account? <a href="../index.php">Sign in</a>.</p>
+	    <p>Already have an account? <a href="index.php">Sign in</a>.</p>
 	  </div>
 	</form>
 </center>

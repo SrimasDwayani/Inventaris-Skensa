@@ -8,7 +8,7 @@ $password = password_hash($_POST['password'],PASSWORD_DEFAULT);
 $sql="INSERT INTO register (nama,nis,password) VALUES ('$nama','$nis','$password')";
 $hasil= mysqli_query($conn,$sql);
 if ($hasil) {
-	header('Location:../index.php');
+	header('Location:index.php');
 }else{
 	echo "Gagal!";
 }
