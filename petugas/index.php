@@ -5,11 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>login page</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<!-- Sweetalert -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- End sweet alert -->
 	<style type="text/css">
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url(../../img/gam2.jpg);
+			background-image: url(../img/gam2.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-attachment: fixed; 
@@ -31,7 +35,7 @@
 
 		.avatar {
 			font-size: 50px;
-			background: url(../../img/logo1.jpg);
+			background: url(../img/logo1.jpg);
 			width: 80px;
 			height: 80px;
 			line-height:80px ;
@@ -116,7 +120,7 @@
 	</style>
 </head>
 <body>
-	<form action="login.php" method="post">
+	<form action="login/login.php" method="post">
 	<div class="login">
 		<div class="avatar">
 			<i></i>
@@ -126,7 +130,7 @@
 
 		<div class="box-login">
 			<i class="fas fa-envelope"></i>
-			<input type="number" name="nip" placeholder="NIP" required="">
+			<input type="number" name="nip" placeholder="NIP" required="" autofocus="">
 		</div>
 
 
@@ -134,6 +138,7 @@
 			<i class="fas fa-lock"></i>
 			<input type="password" name="password" placeholder="Password" required="">
 		</div>
+
 		<br>
 
 		<button type="sumbit" class="btn-login">
@@ -141,6 +146,7 @@
 		</button>
 
 		<div class="bottom">
+			<a href="login/register.php">Register</a>
 			<a href="">Forgot Password</a>
 		</div>
 	</div>

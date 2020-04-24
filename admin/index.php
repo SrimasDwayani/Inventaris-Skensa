@@ -120,7 +120,7 @@
 	</style>
 </head>
 <body>
-	<form action="login.php" method="post">
+	<form action="login/login.php" method="post">
 	<div class="login">
 		<div class="avatar">
 			<i></i>
@@ -130,7 +130,7 @@
 
 		<div class="box-login">
 			<i class="fas fa-envelope"></i>
-			<input type="number" name="nis" placeholder="NIS" required="">
+			<input type="number" name="nip" placeholder="NIP" required="">
 		</div>
 
 
@@ -145,7 +145,6 @@
 		</button>
 
 		<div class="bottom">
-			<a href="register.php">Register</a>
 			<a href="">Forgot Password</a>
 		</div>
 	</div>

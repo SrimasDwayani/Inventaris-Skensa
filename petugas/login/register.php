@@ -9,7 +9,7 @@
 		  height: 400px;
 		  width: 320px;
 		  margin-left: 530px;
-		  margin-top: 100px;
+		  margin-top: 70px;
 		}
 
 		* {
@@ -109,7 +109,13 @@
 
 	    <div class="box-login">
 			<i class="fas fa-user"></i>
-			<input type="text" name="nama" placeholder="Name" required="">
+			<input type="text" name="nama" placeholder="Nama Lengkap" required="">
+		</div>
+
+
+		<div class="box-login">
+			<i class="fas fa-user"></i>
+			<input type="email" name="email" placeholder="Email" required="">
 		</div>
 
 

@@ -12,9 +12,6 @@
 			<a href="?tampil=user_edit"><li>Profil</li></a>
 		</ul>
 		<ul>
-			<a href="?tampil=petugas"><li>Petugas</li></a>
-		</ul>
-		<ul>
 			<a href="?tampil=level"><li>Level</li></a>
 		</ul>
 		<ul>
