@@ -29,11 +29,11 @@
  				<th>Kondisi</th>
  				<th>Keterangan</th>
  				<th>Jumlah</th>
- 				<th>Id Jenis</th>
+ 				<th>Jenis</th>
  				<th>Tanggal Register</th>
- 				<th>Id Ruang</th>
+ 				<th>Ruang</th>
  				<th>Kode Inventaris</th>
- 				<th>Id_petugas</th>
+ 				<th>Petugas</th>
  			</tr>
 
  			<?php 	
@@ -47,11 +47,11 @@
  							<td><?php echo $data['kondisi']; ?></td>
  							<td><?php echo $data['keterangan']; ?></td>
  							<td><?php echo $data['jumlah']; ?></td>
- 							<td><?php echo $data['id_jenis']; ?></td>
+ 							<td><?php echo $data['nama_jenis']; ?></td>
  							<td><?php echo $data['tanggal_register']; ?></td>
- 							<td><?php echo $data['id_ruang']; ?></td>
+ 							<td><?php echo $data['nama_ruang']; ?></td>
  							<td><?php echo $data['kode_inventaris']; ?></td>
- 							<td><?php echo $data['id_petugas']; ?></td>
+ 							<td><?php echo $data['nama_petugas']; ?></td>
  						</tr>
  					<?php $nomor++; 
  				}

@@ -5,29 +5,8 @@
 	if ($tampil == "menu")
 		include ("menu/menu_tampil.php");
 
-	elseif ($tampil == "admin")
-		include ("admin/admin_tampil.php");
-
-	elseif ($tampil == "petugas")
-		include ("petugas/petugas_tampil.php");
-
-	elseif ($tampil == "level")
-		include ("level/level_tampil.php");
-
-	elseif ($tampil == "jenis")
-		include ("jenis/tampil_jenis.php");
-
 	elseif ($tampil == "peminjaman")
 		include ("peminjaman/peminjaman_tampil.php");
-
-	elseif ($tampil == "ruang")
-		include ("ruang/ruang_tampil.php");
-
-	elseif ($tampil == "barang_masuk")
-		include ("barang_masuk/barang_masuk_tampil.php");
-
-	elseif ($tampil == "barang_keluar")
-		include ("barang_keluar/barang_keluar_tampil.php");
 
 	elseif ($tampil == "pesan")
 		include ("pesan/pesan_tampil.php");

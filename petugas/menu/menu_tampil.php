@@ -1,6 +1,6 @@
 <div class="box">
 	<div class="jurusan">
-		<a href="../admin/jurusan/multimedia/mm_tampil.php"><img src="../img/mm.jpg">
+		<a href="jurusan/multimedia/mm_tampil.php"><img src="../img/mm.jpg">
 			<div class="text">
 				
 			</div>
@@ -10,7 +10,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href="../admin/jurusan/rpl/tampil_rpl.php"><img src="../img/rpl.jpeg">
+		<a href="jurusan/rpl/tampil_rpl.php"><img src="../img/rpl.jpeg">
 			<div class="text">
 				
 			</div>
@@ -20,7 +20,7 @@
 		</a>
 	</div>
 	<div class="jurusan">
-		<a href="../admin/jurusan/tkj/tampil_tkj.php"><img src="../img/tkj.png">
+		<a href="jurusan/tkj/tampil_tkj.php"><img src="../img/tkj.png">
 			<div class="text">
 				
 			</div>
