@@ -20,9 +20,10 @@
  	<link rel="stylesheet" type="text/css" href="../../../css/foll.css">
  </head>
  <body style="box-shadow: none; background-color: white;">
+ 	<?php include("../header/header.php"); ?>
  	<div class="inven_data">
  	<center>
- 		<h2>Inventaris Barang Jurusan Multimedia</h2>
+ 		<h2>Inventaris Barang Jurusan Teknik Listrik</h2>
  		<form action="" method="POST">
  			<input type="text" name="keywoard" placeholder="Cari -- Nama Barang --" autofocus="">
  		<button name="cari" type="submit">Cari</button>

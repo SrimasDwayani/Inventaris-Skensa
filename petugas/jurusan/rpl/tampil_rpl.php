@@ -20,6 +20,7 @@
  	<link rel="stylesheet" type="text/css" href="../../../css/foll.css">
  </head>
  <body style="box-shadow: none; background-color: white;">
+ 	<?php include("../header/header.php"); ?>
  	<div class="inven_data">
  	<center>
  		<h2>Inventaris Barang Jurusan Multimedia</h2>
